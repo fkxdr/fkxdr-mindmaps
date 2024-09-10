@@ -17,8 +17,9 @@ This is a small place about hosting my personal techniques needed for real-life 
 
 ```mermaid
 flowchart TD
-    A[ Enumerate Microsoft Defender for Endpoint with fkmde.ps1  ] 
-    -->| Vulnerable Exclusions | B[ Exploit Exclusions with PoC ]
-    P[ Enmerate Applocker ]
-    A --> C{ Decision }
+    MDE[ Microsoft Defender for Endpoint ]
+    --> MDEA[ fkmde.ps1 ]
+    -->| Vulnerable Exclusions | MDEB[ Exploit MDE Exclusions with PoC ]
+    MDEA -->| Vulnerable ASR | MDEC[ Exploit ASR with PoC ]
+    APP[ Microsoft AppLocker ]
 ```
