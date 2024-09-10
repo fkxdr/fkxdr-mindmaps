@@ -6,8 +6,9 @@ This is a small place about hosting my personal techniques needed for real-life 
 
 ### Initial Defender Enumeration
 
-- Check if Defender is running
+[ ] Check if Microsoft Defender Antivirus is running  
 `Get-MpComputerStatus`
+AntivirusEnabled Option set to True
 
 
 - Tamper Protection
