@@ -18,8 +18,7 @@ flowchart TD
 ```
 
 ## Table of Contents
-1. [Smart Screen](#Smart-Screen)
-2. [Example2](#example2)
+[Smart Screen](#Smart-Screen)
 
 #### Smart Screen
 
