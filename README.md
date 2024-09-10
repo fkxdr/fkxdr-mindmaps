@@ -4,13 +4,13 @@ Hello friend, how are you?
 
 This is a small place about hosting my personal techniques needed for real-life scenarios, focused on EDR and XDR.
 
-### Initial Defender Enumeration
+#### Initial Defender Enumeration
+[ ] Check if Microsoft Defender Antivirus is running with fkmde
 
-[ ] Check if Microsoft Defender Antivirus is running  
-`Get-MpComputerStatus`
-AntivirusEnabled Option set to True
-
-
-- Tamper Protection
-- ASR Rulesets
-- MDE Exclusions
+#### Smart Screen
+[ ] Smart Screen Test: https://commandcontrol.smartscreentestratings.com/
+[ ] Smart Screen Test: https://smartscreentestratings2.net/
+[ ] Smart Screen Phishing: https://demo.smartscreen.msft.net/phishingdemo.html
+[ ] Smart Screen Malware: https://demo.smartscreen.msft.net/other/malware.html
+[ ] Smart Screen Untrusted: https://demo.smartscreen.msft.net/download/malwaredemo/freevideo.exe
+[ ] Smart Screen Exploit: https://demo.smartscreen.msft.net/other/exploit.html
