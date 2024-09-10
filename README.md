@@ -1,5 +1,7 @@
 # fkxdr-mindmaps for exploiting and bypassing EDR
 
+![image](https://github.com/user-attachments/assets/a2abcdbb-f9fa-42d6-a61c-6de985be283f)
+
 Hello friend, how are you?
 
 This is a small place about hosting my personal techniques needed for real-life scenarios, focused on EDR and XDR.
