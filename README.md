@@ -14,3 +14,11 @@ This is a small place about hosting my personal techniques needed for real-life 
 [ ] Smart Screen Malware: https://demo.smartscreen.msft.net/other/malware.html  
 [ ] Smart Screen Untrusted: https://demo.smartscreen.msft.net/download/malwaredemo/freevideo.exe  
 [ ] Smart Screen Exploit: https://demo.smartscreen.msft.net/other/exploit.html  
+
+```mermaid
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+```
