@@ -16,8 +16,9 @@ flowchart TD
 
     APP[ Microsoft AppLocker ]
 ```
-# Table of Contents
-1. [Example](#example)
+
+## Table of Contents
+1. [Smart Screen](#Smart-Screen)
 2. [Example2](#example2)
 
 #### Smart Screen
