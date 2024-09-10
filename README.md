@@ -15,10 +15,9 @@ This is a small place about hosting my personal techniques needed for real-life 
 [ ] Smart Screen Untrusted: https://demo.smartscreen.msft.net/download/malwaredemo/freevideo.exe  
 [ ] Smart Screen Exploit: https://demo.smartscreen.msft.net/other/exploit.html  
 
-```mermaid
-graph TD;
-    A-->B;
-    A-->C;
-    B-->D;
-    C-->D;
-```
+flowchart LR
+    A[ Enumerate Microsoft Defender Antivirus with fkmde.ps1  ] 
+    -->| Text | B( Round )
+    B --> C{ Decision }
+    C -->| One | D[ Result 1 ]
+    C -->| Two | E[ Result 2 ]
