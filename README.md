@@ -16,11 +16,17 @@ flowchart TD
 
     APP[ Microsoft AppLocker ]
 ```
+# Table of Contents
+1. [Example](#example)
+2. [Example2](#example2)
 
 #### Smart Screen
-[ ] Smart Screen Test: https://commandcontrol.smartscreentestratings.com/  
-[ ] Smart Screen Test: https://smartscreentestratings2.net  
-[ ] Smart Screen Phishing: https://demo.smartscreen.msft.net/phishingdemo.html  
-[ ] Smart Screen Malware: https://demo.smartscreen.msft.net/other/malware.html  
-[ ] Smart Screen Untrusted: https://demo.smartscreen.msft.net/download/malwaredemo/freevideo.exe  
-[ ] Smart Screen Exploit: https://demo.smartscreen.msft.net/other/exploit.html  
+
+A collection of smart screen test links.
+
+* Smart Screen Test: https://commandcontrol.smartscreentestratings.com/  
+* Smart Screen Test: https://smartscreentestratings2.net  
+* Smart Screen Phishing: https://demo.smartscreen.msft.net/phishingdemo.html  
+* Smart Screen Malware: https://demo.smartscreen.msft.net/other/malware.html  
+* Smart Screen Untrusted: https://demo.smartscreen.msft.net/download/malwaredemo/freevideo.exe  
+* Smart Screen Exploit: https://demo.smartscreen.msft.net/other/exploit.html  
