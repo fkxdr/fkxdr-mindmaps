@@ -16,9 +16,10 @@ This is a small place about hosting my personal techniques needed for real-life 
 [ ] Smart Screen Exploit: https://demo.smartscreen.msft.net/other/exploit.html  
 
 ```mermaid
-flowchart LR
-    A[ Enumerate Microsoft Defender Antivirus with fkmde.ps1  ] 
-    -->| Text | B( Round )
+flowchart TD
+    A[ Enumerate Microsoft Defender for Endpoint with fkmde.ps1  ] 
+    B[ Enmerate Applocker ]
+    -->| Text | C( Round )
     B --> C{ Decision }
     C -->| One | D[ Result 1 ]
     C -->| Two | E[ Result 2 ]
