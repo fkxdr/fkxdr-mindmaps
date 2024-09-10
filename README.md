@@ -18,9 +18,7 @@ This is a small place about hosting my personal techniques needed for real-life 
 ```mermaid
 flowchart TD
     A[ Enumerate Microsoft Defender for Endpoint with fkmde.ps1  ] 
-    B[ Enmerate Applocker ]
-    -->| Text | C( Round )
-    B --> C{ Decision }
-    C -->| One | D[ Result 1 ]
-    C -->| Two | E[ Result 2 ]
+    -->| Vulnerable Exclusions | B[ Exploit Exclusions with PoC ]
+    P[ Enmerate Applocker ]
+    A --> C{ Decision }
 ```
