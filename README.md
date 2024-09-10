@@ -20,7 +20,7 @@ flowchart TD
 ## Table of Contents
 [Smart Screen](#Smart-Screen)
 
-#### Smart Screen
+### Smart Screen
 
 A collection of smart screen test links.
 
