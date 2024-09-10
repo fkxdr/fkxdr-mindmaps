@@ -18,8 +18,10 @@ This is a small place about hosting my personal techniques needed for real-life 
 ```mermaid
 flowchart TD
     MDE[ Microsoft Defender for Endpoint ]
-    --> MDEA[ fkmde.ps1 ]
-    -->| Vulnerable Exclusions | MDEB[ Exploit MDE Exclusions with PoC ]
-    MDEA -->| Vulnerable ASR | MDEC[ Exploit ASR with PoC ]
+    --> MDEFK[ fkmde.ps1 ]
+    -->| Vulnerable Exclusions | MDEEX[ Exploit MDE Exclusions with PoC ]
+    MDEFK -->| Vulnerable ASR | MDEC[ Exploit ASR with PoC ]
+    MDE --> MDESC[ Smart Screen testing URL ]
+
     APP[ Microsoft AppLocker ]
 ```
