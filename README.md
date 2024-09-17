@@ -11,7 +11,8 @@ flowchart TD
     -->| Vulnerable Exclusions | MDEEX[ Exploit MDE Exclusions with PoC ]
     MDEFK -->| Vulnerable ASR | MDEC[ Exploit ASR with PoC ]
     MDE --> MDESC[ Smart Screen testing URL ]
-    MDE -->| Obfusication | MDBYP[ Attempt to Bypass MDE ] 
+    MDE --> MDEBP[ ps1-obfusicator ]
+    -->| Bypass Defender | MDEBP2[ Bypass with PoC ]
 
     APP[ Microsoft AppLocker ]
 ```
