@@ -11,7 +11,7 @@ flowchart TD
     MDEENUM --> | fkmde.ps1 | MDEVULN[ Vulnerable Configurations ]
     MDE --> MDEBYPASS[ Attempt Defender Bypass ]
     
-    MDEBYPASS --> | ps1-obfuscator.ps1 | MDEBYPASS[ Defender Misconfiguration]
+    MDEBYPASS --> | ps1-obfuscator.ps1 | MDEBYPASS2[ Defender Misconfiguration]
 
     MDE --> MDESSCR[ Find disabled Smart Screen Settings ]
     MDESSCR --> | Smart Screen testing URL | MDESSCR2[ PoC Smart Screen ]
