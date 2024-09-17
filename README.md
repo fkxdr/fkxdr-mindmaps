@@ -9,6 +9,7 @@ flowchart TD
     MDE[ Microsoft Defender for Endpoint ]
     MDE --> MDEENUM[ Enumerate MDE ]
     MDEENUM --> | fkmde.ps1 | MDEVULN[ Vulnerable Configurations ]
+    MDEENUM --> |  Windows UI | MDEVULN[ Vulnerable Configurations ]
     MDE --> MDEBYPASS[ Attempt Defender Bypass ]
     
     MDEBYPASS --> | ps1-obfuscator.ps1 | MDEBYPASS2[ Defender Misconfiguration]
