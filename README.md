@@ -17,7 +17,7 @@ flowchart TD
     MDEBYPASS --> | ps1-obfuscator.ps1 | MDEBYPASS2[ Defender Bypass ]
 
     MDE --> MDESSCR[ Find disabled Smart Screen Settings ]
-    MDESSCR --> | Smart Screen testing URL | MDESSCR2[ Vuln. Smart Screen ]
+    MDESSCR --> | Smart Screen testing URL | MDESSCR2[ Vulnerable Smart Screen ]
 
     APP[ Microsoft AppLocker ]
 ```
