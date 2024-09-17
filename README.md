@@ -16,13 +16,10 @@ flowchart TD
 ```
 
 ## Table of Contents
-Enumeration
+Enumeration of MDE
 * [Smart Screen](#Smart-Screen)  
-Exploits
-Bypasses
-* [PowerShell Obfuscation](#PowerShell Obfuscation)
 
-## Enumeration
+## Enumeration of MDE
 ### Smart Screen
 
 A collection of smart screen test links.
