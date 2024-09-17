@@ -9,12 +9,14 @@ flowchart TD
     MDE[ Microsoft Defender for Endpoint ]
     MDE --> MDEENUM[ Enumerate Microsoft Defender ]
     MDEENUM --> | fkmde.ps1 | MDEVULN[ Vulnerable Configurations, ASR Rules or Exclusions ]
-    MDE --> | ps1-obfuscator.ps1 | MDEBPASS[ Defender Bypass ]
+    MDE --> MDEBPASS[ Attempt Defender Bypass ]
     
     MDEVULN --> MDEEXPL[ Defender Exploitable PoCs]
-    MDEBPASS --> MDEEXPL[ Defender Exploitable PoCs]
+    MDEBPASS --> | ps1-obfuscator.ps1 | MDEBYPASS[ Defender Bypass Misconfiguration]
+    MDEBYPASS --> MDEEXPL[ Defender Exploitable PoCs]
 
-    MDE --> | Smart Screen testing URL | MDESSCR[ Find disabled Smart Screen Settings ]
+    MDE --> MDESSCR[ Find disabled Smart Screen Settings ]
+    MDESSCR --> | Smart Screen testing URL | MDESSCR2[ Misconfiguration PoC ]
 
     APP[ Microsoft AppLocker ]
 ```
