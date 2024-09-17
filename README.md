@@ -7,16 +7,14 @@ This is a small place about hosting my personal techniques needed for real-life 
 ```mermaid
 flowchart TD
     MDE[ Microsoft Defender for Endpoint ]
-    MDE --> MDEENUM[ Enumerate Microsoft Defender ]
-    MDEENUM --> | fkmde.ps1 | MDEVULN[ Vulnerable Configurations, ASR Rules or Exclusions ]
-    MDE --> MDEBPASS[ Attempt Defender Bypass ]
+    MDE --> MDEENUM[ Enumerate MDE ]
+    MDEENUM --> | fkmde.ps1 | MDEVULN[ Vulnerable Configurations ]
+    MDE --> MDEBYPASS[ Attempt Defender Bypass ]
     
-    MDEVULN --> MDEEXPL[ Defender Exploitable PoCs]
-    MDEBPASS --> | ps1-obfuscator.ps1 | MDEBYPASS[ Defender Bypass Misconfiguration]
-    MDEBYPASS --> MDEEXPL[ Defender Exploitable PoCs]
+    MDEBYPASS --> | ps1-obfuscator.ps1 | MDEBYPASS[ Defender Misconfiguration]
 
     MDE --> MDESSCR[ Find disabled Smart Screen Settings ]
-    MDESSCR --> | Smart Screen testing URL | MDESSCR2[ Misconfiguration PoC ]
+    MDESSCR --> | Smart Screen testing URL | MDESSCR2[ PoC Smart Screen ]
 
     APP[ Microsoft AppLocker ]
 ```
