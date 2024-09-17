@@ -10,8 +10,10 @@ flowchart TD
     MDE --> MDEENUM[ Enumerate MDE ]
     MDEENUM --> | fkmde.ps1 | MDEVULN[ Vulnerable Configurations ]
     MDEENUM --> |  Windows UI | MDEVULN[ Vulnerable Configurations ]
+    MDEVULN --> MDEASR[ ASR Exclusions ]
+    MDEVULN --> MDEEXCLUSION[ Defender Exclusions ]
+
     MDE --> MDEBYPASS[ Attempt Defender Bypass ]
-    
     MDEBYPASS --> | ps1-obfuscator.ps1 | MDEBYPASS2[ Exploit Misconfiguration]
 
     MDE --> MDESSCR[ Find disabled Smart Screen Settings ]
