@@ -16,10 +16,10 @@ flowchart TD
 ```
 
 ## Table of Contents
-[Enumeration](#Enumeration)  
-[Smart Screen](#Smart-Screen)  
-[Exploits](#Exploits)  
-[Bypasses](#Bypasses)  
+- [Enumeration](#Enumeration)  
+* [Smart Screen](#Smart-Screen)  
+- [Exploits](#Exploits)  
+- [Bypasses](#Bypasses)  
 
 ## Enumeration
 ### Smart Screen
