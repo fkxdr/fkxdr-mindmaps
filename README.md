@@ -1,4 +1,4 @@
-# fkxdr-mindmaps for exploiting and bypassing EDR
+# fkxdr-mindmaps for exploiting and bypassing EDR/XDR
 
 ![image](https://github.com/user-attachments/assets/a2abcdbb-f9fa-42d6-a61c-6de985be283f)
 
@@ -16,11 +16,12 @@ flowchart TD
 ```
 
 ## Table of Contents
-[Pentesting](#Pentesting)
+[Enumeration](#Enumeration)
 [Smart Screen](#Smart-Screen)
-[Bypassing](#Bypassing)
+[Exploits](#Exploits)
+[Bypasses](#Bypasses)
 
-## Pentesting
+## Enumeration
 ### Smart Screen
 
 A collection of smart screen test links.
@@ -32,4 +33,5 @@ A collection of smart screen test links.
 * Smart Screen Untrusted: https://demo.smartscreen.msft.net/download/malwaredemo/freevideo.exe  
 * Smart Screen Exploit: https://demo.smartscreen.msft.net/other/exploit.html  
 
-## Bypassing
+## Exploits
+## Bypasses
