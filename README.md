@@ -16,8 +16,11 @@ flowchart TD
 ```
 
 ## Table of Contents
+[Pentesting](#Pentesting)
 [Smart Screen](#Smart-Screen)
+[Bypassing](#Bypassing)
 
+## Pentesting
 ### Smart Screen
 
 A collection of smart screen test links.
@@ -28,3 +31,5 @@ A collection of smart screen test links.
 * Smart Screen Malware: https://demo.smartscreen.msft.net/other/malware.html  
 * Smart Screen Untrusted: https://demo.smartscreen.msft.net/download/malwaredemo/freevideo.exe  
 * Smart Screen Exploit: https://demo.smartscreen.msft.net/other/exploit.html  
+
+## Bypassing
