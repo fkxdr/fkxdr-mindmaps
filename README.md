@@ -46,6 +46,15 @@ A collection of smart screen test links.
 * Smart Screen Phishing: https://demo.smartscreen.msft.net/phishingdemo.html  
 * Smart Screen Malware: https://demo.smartscreen.msft.net/other/malware.html  
 * Smart Screen Untrusted: https://demo.smartscreen.msft.net/download/malwaredemo/freevideo.exe  
-* Smart Screen Exploit: https://demo.smartscreen.msft.net/other/exploit.html  
+* Smart Screen Exploit: https://demo.smartscreen.msft.net/other/exploit.html
+
+### ASR Rules
+
+A collection of PoC's and scripts to test ASR rules and implementations.
+
+![image](https://github.com/user-attachments/assets/6522305c-2628-4a4c-b1c9-4ca9ad647508)
+
+* PoC_AsrOfficeMacroWin32ApiCalls.docm
+
 
 
