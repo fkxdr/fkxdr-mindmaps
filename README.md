@@ -44,7 +44,8 @@ A collection of PoC's and scripts to test ASR rules and implementations.
 
 ![image](https://github.com/user-attachments/assets/00216155-88a4-482c-9225-7296380d0ede)
 
-* officemacro32.docm (d4f940ab-401b-4efc-aadc-ad5f3c50688a / 92e97fa1-2edf-4476-bdd6-9dd0b4dddc7b)  
+* officemacro32.docm (d4f940ab-401b-4efc-aadc-ad5f3c50688a / 92e97fa1-2edf-4476-bdd6-9dd0b4dddc7b)
+
 ps. If Microsoft is blocking the document due an untrusted source, make sure to check the box in properties to trust.
 
 Disable / Enable ASR Rules
