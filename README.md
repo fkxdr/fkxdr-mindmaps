@@ -41,7 +41,7 @@ A collection of enumeration procedures.
 
 A collection of PoC's and scripts to test ASR rules and implementations.
 
-![image](https://github.com/user-attachments/assets/6522305c-2628-4a4c-b1c9-4ca9ad647508)
+![image](https://github.com/user-attachments/assets/4f9ced4a-8377-49af-980d-882fab62e1b4)
 
 * PoC_AsrOfficeMacroWin32ApiCalls.docm
   
