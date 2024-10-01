@@ -42,7 +42,7 @@ A collection of enumeration procedures.
 
 A collection of PoC's and scripts to test ASR rules and implementations.
 
-![image](https://github.com/user-attachments/assets/4f9ced4a-8377-49af-980d-882fab62e1b4)
+![image](https://github.com/user-attachments/assets/00216155-88a4-482c-9225-7296380d0ede)
 
 * officemacro32.docm
 
