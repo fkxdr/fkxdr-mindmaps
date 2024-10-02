@@ -11,7 +11,7 @@ flowchart TD
     MDEENUM --> | fkmde.ps1 | MDEVULN[ Vulnerable Configurations ]
     MDEENUM --> |  Windows UI | MDEVULN[ Vulnerable Configurations ]
     MDEVULN --> | officemacro32.docm | MDEASR[ ASR Misconfiguration ]
-    MDEVULN --> | ASR exclusions | MDEASR
+    MDEVULN --> | wmiprocess.ps1 | MDEASR
     MDEVULN --> MDEEXCLUSION[ Defender Exclusions ]
 
     MDE --> MDEBYPASS[ Attempt Defender Bypass ]
