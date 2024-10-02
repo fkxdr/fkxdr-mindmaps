@@ -26,6 +26,7 @@ flowchart TD
 ## Table of Contents
 Enumeration of MDE
 * [Defender for Endpoint](#Defender-for-Endpoint)
+* [ASR Rules](#ASR-Rules)
 * [Smart Screen](#Smart-Screen)
 
 ## Enumeration of MDE
