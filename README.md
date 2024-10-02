@@ -53,7 +53,6 @@ A collection of PoC's and scripts to test ASR rules and implementations.
 
   ps. If Microsoft is blocking the document due an untrusted source, make sure to check the box in properties to trust.
 
-  Enable & disable ASR rules
   ```
   Add-MpPreference -AttackSurfaceReductionRules_Actions Enabled -AttackSurfaceReductionRules_Ids 92e97fa1-2edf-4476-bdd6-9dd0b4dddc7b
   Add-MpPreference -AttackSurfaceReductionRules_Actions Disabled -AttackSurfaceReductionRules_Ids 92e97fa1-2edf-4476-bdd6-9dd0b4dddc7b
@@ -65,7 +64,6 @@ A collection of PoC's and scripts to test ASR rules and implementations.
 ### wmiprocess.ps1 (d1e49aac-8f56-4280-b9ba-993a6d77406c )
 ![image](https://github.com/user-attachments/assets/63abd5b5-50a2-4f25-aac4-69691ccd0f8b)
 
-  Enable & disable ASR rules
   ```
   Add-MpPreference -AttackSurfaceReductionRules_Actions Enable -AttackSurfaceReductionRules_Ids d1e49aac-8f56-4280-b9ba-993a6d77406c #Enable Block process creations originating from PSExec and WMI commands
   Add-MpPreference -AttackSurfaceReductionRules_Actions Disabled -AttackSurfaceReductionRules_Ids d1e49aac-8f56-4280-b9ba-993a6d77406c #Disable Block process creations originating from PSExec and WMI commands
