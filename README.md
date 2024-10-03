@@ -6,21 +6,29 @@ This is a small place about hosting my personal techniques needed for real-life 
   
 ```mermaid
 flowchart TD
-    MDE[ Microsoft Defender for Endpoint ]
-    MDE --> MDEENUM[ Enumerate MDE ]
-    MDEENUM --> | fkmde.ps1 | MDEVULN[ Vulnerable Configurations ]
-    MDEENUM --> |  Windows UI | MDEVULN[ Vulnerable Configurations ]
-    MDEVULN --> | officemacro32.docm | MDEASR[ ASR Misconfiguration ]
-    MDEVULN --> | wmiprocess.ps1 | MDEASR
-    MDEVULN --> MDEEXCLUSION[ Defender Exclusions ]
+    start((Microsoft Defender))
+    
+    start --> MDEENUM[Enumerate Defender settings]
+    MDEENUM --> |fkmde.ps1| MDEVULN[Identify vulnerable configurations]
+    MDEENUM --> |Windows UI| MDEVULN
+    
+    MDEVULN --> MDEVULNASR[ASR rules]
+    MDEVULNASR --> |officemacro32.docm| MDEASREXP[Exploit ASR misconfiguration]
+    MDEVULNASR --> |wmiprocess.ps1| MDEASREXP
+    
+    MDEVULN --> MDEEXCLUSION[Defender exclusions]
+    MDEEXCLUSION --> |Folder / file exclusions| EXPLOITEXCL[Exploit exclusions]
+    
+    MDEVULN --> MDEMISCONF[Tamper Protection]
+    MDEMISCONF --> |fkmde.ps1 --kill| MDEKILL[Kill Defender process]
+    
+    start --> MDEBYPASS[Attempt to bypass static Defender]
+    MDEBYPASS --> |ps1-obfuscator.ps1| MDEBYPASS2[Bypass Defender]
+    
+    start --> MDESSCR[Review Smart Screen settings]
+    MDESSCR --> |Test with URL| MDESSCRVULN[Exploit vulnerable Smart Screen]
 
-    MDE --> MDEBYPASS[ Attempt Defender Bypass ]
-    MDEBYPASS --> | ps1-obfuscator.ps1 | MDEBYPASS2[ Defender Bypass ]
 
-    MDE --> MDESSCR[ Find disabled Smart Screen Settings ]
-    MDESSCR --> | Smart Screen testing URL | MDESSCR2[ Vulnerable Smart Screen ]
-
-    APP[ Microsoft AppLocker ]
 ```
 
 ## Table of Contents
