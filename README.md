@@ -52,6 +52,8 @@ A collection of enumeration procedures.
   Set-ExecutionPolicy Unrestricted -Scope CurrentUser
   ```
 
+* [SharpExclusionFinder](https://github.com/Friends-Security/SharpExclusionFinder)
+  Windows Defender folder exclusions through MpCmdRun.exe, but detected by MDE. So an exclusion for the tool is needed, or can be used as PoC.
 
 ## ASR Rules
 
