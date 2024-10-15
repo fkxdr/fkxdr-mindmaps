@@ -17,7 +17,8 @@ flowchart TD
     MDEVULNASR --> |wmiprocess.ps1| MDEASREXP
     
     MDEVULN --> MDEEXCLUSION[Defender exclusions]
-    MDEEXCLUSION --> |Folder / file exclusions| EXPLOITEXCL[Exploit exclusions]
+    MDEEXCLUSION --> |fkmde.ps1| EXPLOITEXCL[Exploit exclusions]
+    MDEEXCLUSION --> |SharpExclusionFinder.exe "C:\MyDirectory" | EXPLOITEXCL[Exploit exclusions]
     
     MDEVULN --> MDEMISCONF[Tamper Protection]
     MDEMISCONF --> |fkmde.ps1 --kill| MDEKILL[Kill Defender process]
