@@ -18,7 +18,7 @@ flowchart TD
     
     MDEVULN --> MDEEXCLUSION[Defender exclusions]
     MDEEXCLUSION --> |fkmde.ps1| EXPLOITEXCL[Exploit exclusions]
-    MDEEXCLUSION --> |SharpExclusionFinder.exe| EXPLOITEXCL[Exploit exclusions]
+    MDEEXCLUSION --> |fkmde.ps1 --enum| EXPLOITEXCL[Exploit exclusions]
     
     MDEVULN --> MDEMISCONF[Tamper Protection]
     MDEMISCONF --> |fkmde.ps1 --kill| MDEKILL[Kill Defender process]
