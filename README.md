@@ -43,12 +43,12 @@ Enumeration of MDE
 
 A collection of enumeration procedures.
 
-* fkmde.ps1 with -nop bypass
+* fkmde.ps1 with -nop bypass (will get flagged as Medium Incident - Multi-stage incident involving Execution & Discovery due -nop flag)
   ```powershell
-  powershell -nop -c "Invoke-Expression (New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/fkxdr/fkmde/refs/heads/main/fkmde.ps1')"
+  Invoke-Expression (New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/fkxdr/fkmde/refs/heads/main/fkmde.ps1')
   ```
 
-  *fkmde.ps1 with parameters
+  *fkmde.ps1 with parameters through RestMethod
   ```powershell
   Invoke-Expression "& { $(Invoke-RestMethod https://raw.githubusercontent.com/fkxdr/fkmde/refs/heads/main/fkmde.ps1) } --enum C:\Windows 3"
   ```
@@ -61,6 +61,11 @@ A collection of enumeration procedures.
 * ps. if unable to run a script on the current system, an execution policy has to be set. You can bypass this with -nop or set the policy by hand
   ```
   Set-ExecutionPolicy Unrestricted -Scope CurrentUser
+  ```
+
+* ps. you can use fkmde.ps1 with -nop bypass, but it will get flagged as Medium Incident - Multi-stage incident involving Execution & Discovery
+  ```powershell
+  powershell -nop -c "Invoke-Expression (New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/fkxdr/fkmde/refs/heads/main/fkmde.ps1')"
   ```
 
 ## ASR Rules
