@@ -48,7 +48,7 @@ A collection of enumeration procedures.
   Invoke-Expression (New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/fkxdr/fkmde/refs/heads/main/fkmde.ps1')
   ```
 
-  *fkmde.ps1 with parameters through RestMethod
+* fkmde.ps1 with parameters through RestMethod
   ```powershell
   Invoke-Expression "& { $(Invoke-RestMethod https://raw.githubusercontent.com/fkxdr/fkmde/refs/heads/main/fkmde.ps1) } --enum C:\Windows 3"
   ```
