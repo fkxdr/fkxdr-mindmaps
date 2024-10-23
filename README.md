@@ -43,7 +43,7 @@ Enumeration of MDE
 
 A collection of enumeration procedures.
 
-* fkmde.ps1 with -nop bypass (will get flagged as Medium Incident - Multi-stage incident involving Execution & Discovery due -nop flag)
+* fkmde.ps1
   ```powershell
   Invoke-Expression (New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/fkxdr/fkmde/refs/heads/main/fkmde.ps1')
   ```
