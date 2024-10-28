@@ -104,7 +104,7 @@ This section includes Proof of Concepts (PoCs) and scripts to evaluate the effec
   
 ## Smart Screen
 
-A curated collection of Smart Screen test links to evaluate various behaviors, including phishing, malware detection, and exploit blocking.
+A collection of Smart Screen test links to evaluate various behaviors, including phishing, malware detection, and exploit blocking.
 
 - [Smart Screen Test](https://commandcontrol.smartscreentestratings.com)
 - [Smart Screen Test 2](https://smartscreentestratings2.net)
@@ -113,6 +113,7 @@ A curated collection of Smart Screen test links to evaluate various behaviors, i
 - [Untrusted Download](https://demo.smartscreen.msft.net/download/malwaredemo/freevideo.exe)
 - [Exploit Test](https://demo.smartscreen.msft.net/other/exploit.html)
 
+![image](https://github.com/user-attachments/assets/51b37e58-4553-47c9-b601-fc73f5acf75a)
 
 ## Ideas for LPE
 
