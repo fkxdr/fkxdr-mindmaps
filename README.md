@@ -63,10 +63,8 @@ A collection of enumeration procedures.
   powershell -nop -c "Invoke-Expression (New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/fkxdr/fkmde/refs/heads/main/fkmde.ps1')"
   ```
 
-ps. if unable to run a script on the current system, an execution policy has to be set. You can bypass this with -nop or set the policy by hand
-  ```
-  Set-ExecutionPolicy Unrestricted -Scope CurrentUser
-  ```
+> [!NOTE]
+> If unable to run a script on the current system, an execution policy has to be set. You can bypass this with `-nop` or set the policy by using `Set-ExecutionPolicy Unrestricted -Scope CurrentUser`
 
 ## ASR Rules
 
