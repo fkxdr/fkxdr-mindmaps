@@ -104,7 +104,9 @@ A collection of smart screen test links.
 * Smart Screen Untrusted: https://demo.smartscreen.msft.net/download/malwaredemo/freevideo.exe  
 * Smart Screen Exploit: https://demo.smartscreen.msft.net/other/exploit.html
 
+## Ideas
 
+`powershell -ep bypass -c "Invoke-Expression -Command (Invoke-RestMethod 'https://raw.githubusercontent.com/itm4n/PrivescCheck/refs/heads/master/PrivescCheck.ps1'); Invoke-PrivescCheck -Extended -Audit -Report PrivescCheck_$($env:COMPUTERNAME) -Format TXT"`
 
 
 
