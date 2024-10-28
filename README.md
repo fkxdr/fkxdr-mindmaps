@@ -59,27 +59,22 @@ Enumeration of MDE
   ```
 
 > [!NOTE]
-> By default, the PowerShell [execution policy](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_execution_policies) is set to `Restricted` on clients, and `RemoteSigned` on servers, when a new `powershell.exe` process is started. These policies block the execution of (unsigned) scripts, but they can be overriden within the current scope as follows.
+> By default, the PowerShell [execution policy](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_execution_policies) is set to `Restricted` on clients, and `RemoteSigned` on servers, when a new `powershell.exe` process is started. These policies block the execution of (unsigned) scripts, but they can be overriden within the current scope. However, this trick does not work when the execution policy is enforced through a GPO. In this case, after starting a new PowerShell session, you can load the script with the second command.
 
 ```powershell
 Set-ExecutionPolicy Bypass -Scope Process -Force
-
-```
-> [!IMPORTANT]
-> However, this trick does not work when the execution policy is enforced through a GPO. In this case, after starting a new PowerShell session, you can load the script as follows.
-
-```powershell
 Get-Content .\fkmde.ps1 | Out-String | Invoke-Expression
 ```
 
 ## ASR Rules
 
-A collection of PoC's and scripts to test ASR rules and implementations.
+This section includes Proof of Concepts (PoCs) and scripts to evaluate the effectiveness of ASR rules, which help secure systems by reducing the attack surface for malicious or unauthorized applications.
 
-### officemacro32.docm (d4f940ab-401b-4efc-aadc-ad5f3c50688a / 92e97fa1-2edf-4476-bdd6-9dd0b4dddc7b)
-![image](https://github.com/user-attachments/assets/00216155-88a4-482c-9225-7296380d0ede)
+### officemacro32.docm
 
-  ps. If Microsoft is blocking the document due an untrusted source, make sure to check the box in properties to trust.
+**Rules:**
+- **d4f940ab-401b-4efc-aadc-ad5f3c50688a**
+- **92e97fa1-2edf-4476-bdd6-9dd0b4dddc7b**
 
   ```console
   Add-MpPreference -AttackSurfaceReductionRules_Actions Enabled -AttackSurfaceReductionRules_Ids 92e97fa1-2edf-4476-bdd6-9dd0b4dddc7b
@@ -88,27 +83,40 @@ A collection of PoC's and scripts to test ASR rules and implementations.
   Add-MpPreference -AttackSurfaceReductionRules_Actions Enabled -AttackSurfaceReductionRules_Ids d4f940ab-401b-4efc-aadc-ad5f3c50688a
   Add-MpPreference -AttackSurfaceReductionRules_Actions Disabled -AttackSurfaceReductionRules_Ids d4f940ab-401b-4efc-aadc-ad5f3c50688a
   ```
+  
+  ![image](https://github.com/user-attachments/assets/00216155-88a4-482c-9225-7296380d0ede)
 
-### wmiprocess.ps1 (d1e49aac-8f56-4280-b9ba-993a6d77406c )
-![image](https://github.com/user-attachments/assets/63abd5b5-50a2-4f25-aac4-69691ccd0f8b)
+> [!NOTE]
+> If Microsoft flags the document due to an untrusted source, right-click the document, go to properties, and select the option to trust the source.
 
+
+### wmiprocess.ps1 
+
+**Rule:**
+- **d1e49aac-8f56-4280-b9ba-993a6d77406c**
+  
   ```
   Add-MpPreference -AttackSurfaceReductionRules_Actions Enable -AttackSurfaceReductionRules_Ids d1e49aac-8f56-4280-b9ba-993a6d77406c #Enable Block process creations originating from PSExec and WMI commands
   Add-MpPreference -AttackSurfaceReductionRules_Actions Disabled -AttackSurfaceReductionRules_Ids d1e49aac-8f56-4280-b9ba-993a6d77406c #Disable Block process creations originating from PSExec and WMI commands
   ```
   
+![image](https://github.com/user-attachments/assets/63abd5b5-50a2-4f25-aac4-69691ccd0f8b)
+  
 ## Smart Screen
 
-A collection of smart screen test links.
+A curated collection of Smart Screen test links to evaluate various behaviors, including phishing, malware detection, and exploit blocking.
 
-* Smart Screen Test: https://commandcontrol.smartscreentestratings.com/  
-* Smart Screen Test: https://smartscreentestratings2.net  
-* Smart Screen Phishing: https://demo.smartscreen.msft.net/phishingdemo.html  
-* Smart Screen Malware: https://demo.smartscreen.msft.net/other/malware.html  
-* Smart Screen Untrusted: https://demo.smartscreen.msft.net/download/malwaredemo/freevideo.exe  
-* Smart Screen Exploit: https://demo.smartscreen.msft.net/other/exploit.html
+- [Smart Screen Test](https://commandcontrol.smartscreentestratings.com)
+- [Smart Screen Test 2](https://smartscreentestratings2.net)
+- [Phishing Test](https://demo.smartscreen.msft.net/phishingdemo.html)
+- [Malware Detection](https://demo.smartscreen.msft.net/other/malware.html)
+- [Untrusted Download](https://demo.smartscreen.msft.net/download/malwaredemo/freevideo.exe)
+- [Exploit Test](https://demo.smartscreen.msft.net/other/exploit.html)
+
 
 ## Ideas for LPE
+
+The following commands and tools provide potential avenues for exploring local privilege escalation methods. They include registry checks, credential queries, and accessing Windows Subsystem for Linux (WSL) binaries.
 
 ```powershell
 net accounts
