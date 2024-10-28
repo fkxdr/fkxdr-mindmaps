@@ -68,6 +68,13 @@ A collection of enumeration procedures.
 
 ```powershell
 Set-ExecutionPolicy Bypass -Scope Process -Force
+
+```
+> [!IMPORTANT]
+> However, this trick does not work when the execution policy is enforced through a GPO. In this case, after starting a new PowerShell session, you can load the script as follows.
+
+```powershell
+Get-Content .\PrivescCheck.ps1 | Out-String | Invoke-Expression
 ```
 
 ## ASR Rules
