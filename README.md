@@ -41,9 +41,7 @@ Enumeration of MDE
 ## Enumeration of MDE
 ### Defender for Endpoint
 
-
-
-#### fkmde.ps1 can be run with multiple parameters and modes to suit different use cases and operational environments. 
+ fkmde.ps1 can be run with multiple parameters and modes to suit different use cases and operational environments. 
   ```powershell
   // basic method with iex
   Invoke-Expression (New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/fkxdr/fkmde/refs/heads/main/fkmde.ps1')
