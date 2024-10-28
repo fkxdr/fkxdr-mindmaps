@@ -75,7 +75,7 @@ A collection of PoC's and scripts to test ASR rules and implementations.
 
   ps. If Microsoft is blocking the document due an untrusted source, make sure to check the box in properties to trust.
 
-  ```
+  ```console
   Add-MpPreference -AttackSurfaceReductionRules_Actions Enabled -AttackSurfaceReductionRules_Ids 92e97fa1-2edf-4476-bdd6-9dd0b4dddc7b
   Add-MpPreference -AttackSurfaceReductionRules_Actions Disabled -AttackSurfaceReductionRules_Ids 92e97fa1-2edf-4476-bdd6-9dd0b4dddc7b
 
