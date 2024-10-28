@@ -64,7 +64,11 @@ A collection of enumeration procedures.
   ```
 
 > [!NOTE]
-> If unable to run a script on the current system, an execution policy has to be set. You can bypass this with `-nop` or set the policy by using `Set-ExecutionPolicy Unrestricted -Scope CurrentUser`
+> By default, the PowerShell [execution policy](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_execution_policies) is set to `Restricted` on clients, and `RemoteSigned` on servers, when a new `powershell.exe` process is started. These policies block the execution of (unsigned) scripts, but they can be overriden within the current scope as follows.
+
+```powershell
+Set-ExecutionPolicy Bypass -Scope Process -Force
+```
 
 ## ASR Rules
 
