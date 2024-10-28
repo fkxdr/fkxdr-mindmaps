@@ -37,6 +37,7 @@ Enumeration of MDE
 * [Defender for Endpoint](#Defender-for-Endpoint)
 * [ASR Rules](#ASR-Rules)
 * [Smart Screen](#Smart-Screen)
+* [Ideas for LPE](#Ideas-for-LPE)
 
 ## Enumeration of MDE
 ### Defender for Endpoint
